@@ -7,7 +7,7 @@ on:
       - "src/**"
       - "tests/**"
       - "package.json"
-  pull:
+  pull_request:
     branches:
       - main
       - "release/**"
