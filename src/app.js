@@ -71,3 +71,4 @@ app.listen(PORT, () => {
     - GET  http://localhost:${PORT}/api/add/10/5
     - POST http://localhost:${PORT}/api/data`);
 });
+  // ملاحظة: يمكنك استخدام أدوات مثل Postman أو curl لاختبار الـ APIs.
