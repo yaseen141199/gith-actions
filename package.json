@@ -1,0 +1,11 @@
+{
+  "name": "github-actions",
+  "version": "1.0.0",
+  "description": "Simple project for GitHub Actions testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified yet\" && exit 0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
