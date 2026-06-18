@@ -1,0 +1,22 @@
+on:
+    workflow_dispatch:
+jobs:
+    hyper-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: run command on ubuntu vm
+              run: echo "Hello World"
+            - name: run inside alpine container
+              uses: docker://alpine:3.17
+              with:
+                  entrypoint: /bin/sh
+                  args: -c "echo Hello from inside the container"
+            - name: run another command on ubuntu vm
+              run: echo "Hello again"     
+    dockerized-job:
+        runs-on: ubuntu-latest
+        container:
+            image: alpine:3.17
+        steps:
+            - name: run command inside the container
+              run: echo "Hello from inside the container"
