@@ -8,3 +8,4 @@ jobs:
           deprecated=true
           if [[ deprecated ]] ; then
             echo "::warning::deprecated function found"
+          fi  
